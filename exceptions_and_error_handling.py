@@ -2,6 +2,7 @@ def division(x, y):
     return x/y
 def main():
     while True:
+        print("\n--- Division Program ---")
         print("Enter two numbers to find their quotient. (x/y)")
         x = float(input("Enter the first number x: "))
         y = float(input("Enter the second numbery: "))
