@@ -1,0 +1,22 @@
+class Person:
+    def greet(self):
+        print("Hello from Person!")
+
+class Student(Person):
+    def identify(self):
+        print("I am a Student.")
+
+class Employee(Person):
+    def identify(self):
+        print("I am an Employee.")
+
+class StudentEmployee(Student, Employee): # Inherits from Student first, then Employee
+    pass # No new methods, inherits from parents
+
+# Check MRO
+print(StudentEmployee.__mro__)
+# Output: (<class '__main__.StudentEmployee'>, <class '__main__.Student'>, <class '__main__.Employee'>, <class '__main__.Person'>, <class 'object'>)
+
+# When you call identify, Python follows the MRO
+se = StudentEmployee()
+se.identify() # Output: I am a Student. (because Student comes before Employee in MRO)
