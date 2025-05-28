@@ -30,9 +30,9 @@ class Lecturer(Person):
         print(f"College: {self.College}")
 
 student = Student("Nsubuga Ibrahim", 22, "23/U", "23007", "BSSE", "II")
-Lecturer = Lecturer("Dr. Jeff", 30, "L1234", "COCIS")
+lecturer = Lecturer("Dr. Jeff", 30, "L1234", "COCIS")
 
 student.Display_Student_Info()
-Lecturer.Display_Lecturer_Info()
+lecturer.Display_Lecturer_Info()
 
      
